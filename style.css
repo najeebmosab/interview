@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.los-angeles-mountains {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./image/martin-jernberg-2Bjq3A7rGn4-unsplash.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.los-angeles-mountains nav {
+  width: 60%;
+  height: fit-content;
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.los-angeles-mountains nav section .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.los-angeles-mountains nav a {
+  color: #fff;
+  margin: 10px 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.5vw;
+}
+
+.los-angeles-mountains nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px; /* Adjust the size of the indicator as needed */
+  width: 100%;
+  bottom: 0;
+  left: 0%; /* Center the indicator horizontally */
+  background-color: #fff; /* Set the background color for the indicator */
+  transition: width 0.2s; /* Add a transition for a smooth effect */
+}
+
+.los-angeles-mountains article {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.los-angeles-mountains article h2 {
+  font-size: 4.5vw;
+  background: linear-gradient(180deg, #000, #888, #0000ff);
+  -webkit-background-clip: text; /* For Webkit-based browsers like Chrome and Safari */
+  color: transparent; /* Make the text color transparent to show the gradient background through */
+}
+
+main .mountain-img-mid {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./image/pexels-krivec-ales-552788.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .mountain-img-last {
+  background-image: url(./image/pexels-dreamlens-production-1775777.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main .mountain-img-last .artical-mountain {
+  background-color: #fff;
+  width: 30%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 5% 2.5%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  box-sizing: border-box;
+}
+
+main .mountain-img-last .artical-mountain h2 {
+  color: #35478c;
+  width: 100%;
+  font-size: 100%;
+}
+
+main .mountain-img-last .artical-mountain ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+main .mountain-img-last .artical-mountain ul li {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .mountain-img-last .artical-mountain ul li p {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+  /* Add responsive styles for screens with a maximum width of 768px */
+  .los-angeles-mountains nav {
+    width: 90%; /* Adjust the width as needed for smaller screens */
+  }
+
+  .los-angeles-mountains nav section .logo {
+    width: 20px; /* Adjust the logo size */
+    height: 20px;
+  }
+
+  /* You may also need to modify the navigation links' styles */
+  main .mountain-img-last .artical-mountain h2{
+    font-size: 2.5vw;
+  }
+  main .mountain-img-last .artical-mountain ul li p{
+    font-size: 1.5vw;
+
+  }
+}
